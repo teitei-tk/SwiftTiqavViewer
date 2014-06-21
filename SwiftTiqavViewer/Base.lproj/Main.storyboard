@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="120" id="SN7-rc-bgT" customClass="TiqavCell" customModule="SwiftTiqavViewer" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="120" id="SN7-rc-bgT" customClass="TiqavCell" customModule="SwiftTiqavViewer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="480" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SN7-rc-bgT" id="Zly-e8-qvw">
@@ -48,6 +48,7 @@
                                         <connections>
                                             <outlet property="tiqavImageView" destination="J6b-FL-tbU" id="2hM-bz-TQN"/>
                                             <outlet property="tiqavUrlLabel" destination="yef-Ec-XHf" id="V6z-wI-1hh"/>
+                                            <segue destination="AkT-nR-PgC" kind="push" id="NYT-cO-V8N"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -81,6 +82,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LaQ-zo-WiF" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1175" y="98"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dVj-RU-YgB">
+            <objects>
+                <viewController id="AkT-nR-PgC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sv9-6O-taF"/>
+                        <viewControllerLayoutGuide type="bottom" id="wvt-OS-C6D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tgZ-hm-gxc">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Image Detail View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bab-CB-N6I">
+                                <rect key="frame" x="26" y="15" width="419" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cyO-Lz-YJ4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wj7-yz-HAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="98"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HGy-6E-cKX">
